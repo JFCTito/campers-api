@@ -1,4 +1,5 @@
 package com.backend.campersapi.entity;
+
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -9,7 +10,7 @@ import java.util.Set;
 
 @Entity
 @Data
-@NoArgsConstructor
+@Table(name = "camper")
 
 public class Camper {
     @Id
