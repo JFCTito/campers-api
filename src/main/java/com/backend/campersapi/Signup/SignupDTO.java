@@ -1,4 +1,5 @@
-package com.backend.campersapi.DTO;
+package com.backend.campersapi.Signup;
+
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import lombok.Data;

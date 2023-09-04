@@ -1,15 +1,19 @@
-package com.backend.campersapi.entity;
+package com.backend.campersapi.Signup;
+
+import com.backend.campersapi.Activity.Activity;
+import com.backend.campersapi.Camper.Camper;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigInteger;
-
-@Entity
 @Data
-@Table(name = "signup")
-
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table
 public class Signup {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,5 +34,4 @@ public class Signup {
     @NotNull(message = "Activity ID is required")
     @Column(name = "activity_id", insertable = false, updatable = false)
     private Long activityId;
-
 }
